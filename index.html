@@ -14,43 +14,42 @@
     body {
       background-color: #000;
       font-family: "Poppins", system-ui, sans-serif;
-      color: #d4af37; /* χρυσό */
+      color: #d4af37;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
-      padding: 20px;
+      padding: 24px 14px;
     }
 
     .container {
-      background-color: #b30000; /* γεμάτο κόκκινο πλαίσιο */
-      border-radius: 14px;
-      padding: 28px 20px;
-      width: 90%;
-      max-width: 420px;
+      background-color: #b30000;
+      border-radius: 16px;
+      padding: 26px 18px;
+      width: 100%;
+      max-width: 480px;
       text-align: center;
       box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
     }
 
     h1 {
       color: #000;
-      font-size: 1.9rem;
-      margin-bottom: 14px;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
     }
 
     p {
       color: #ffd700;
-      font-size: 1rem;
-      margin-bottom: 28px;
-      line-height: 1.4;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      line-height: 1.5;
     }
 
-    /* Κουμπί */
     .upload-btn {
       display: inline-block;
-      background-color: #d4af37; /* χρυσό */
-      color: #fff; /* λευκά γράμματα */
+      background-color: #d4af37;
+      color: #fff;
       font-weight: 600;
       padding: 12px 26px;
       border: none;
@@ -59,6 +58,7 @@
       transition: all 0.3s ease;
       font-size: 1rem;
       box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+      margin-top: 12px;
     }
 
     .upload-btn:hover {
@@ -72,57 +72,53 @@
       display: none;
     }
 
-    @media (min-width: 600px) {
-      body {
-        justify-content: flex-start;
-        padding-top: 60px;
-      }
-      .container {
-        max-width: 480px;
-      }
+    .preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .preview img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #d4af37;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Κοινοποίησε τις καλύτερες στιγμές του πάρτι εδώ</h1>
-    <h2><p>Όροι & Προϋποθέσεις του Πάρτι Γενεθλίων μου.
-(ή αλλιώς: τα ψιλά γράμματα της απόλυτης διασκέδασης)</p></h2>
+    <h1>Κοινοποίησε τις καλύτερες στιγμές του πάρτι εδώ 🎉</h1>
 
-<p>Με τη συμμετοχή σου, αποδέχεσαι ότι:</p>
+    <p>Επίλεξε φωτογραφίες από το κινητό σου για να τις ανεβάσεις.</p>
 
-<p>Η λογική μένει έξω από το πάρτι. Αν έρθεις με κοστούμι Μπάτμαν ή πιτζάμες μονόκερου, σε χειροκροτούμε. Αν έρθεις νηφάλιος σε διώχνουμε.</p>
-
-<p>Η εορτάζουσα έχει πάντα δίκιο. Ακόμα κι αν σου πει ότι ο ήλιος είναι μπλε και τα σουβλάκια δεν παχαίνουν.</p>
-
-<p>Η εορτάζουσα είναι το κέντρο του σύμπαντος. Ό,τι κι αν κάνει, γελάμε, χειροκροτάμε και λέμε “ουάου, πόσο μεγάλωσε!”.</p>
-
-<p>Η τούρτα είναι ιερή. Αν αγγίξεις κεράκι πριν τη φωτογραφία, η μαγική δύναμη των ευχών σου θα αφαιρεθεί για ένα έτος.</p>
-
-<p>Οι φωτογραφίες εδώ ανεβαίνουν με αγάπη και λίγο ντροπή.
-Αν ανέβασες φωτογραφία, σε αγαπώ.
-Αν δεν ανέβασες, μάλλον σε έχει ήδη ανεβάσει κάποιος άλλος — οπότε όλα καλά.</p>
-
-<p>Το τραγούδι “Να ζήσεις…” είναι υποχρεωτικό. Αν δεν τραγουδήσεις, θα σου στείλουμε βίντεο με τη φωνή σου σε playback.</p>
-
-<p>Απαγορεύεται η φράση “άλλη μια χρονιά μεγαλύτερη”.
-Αν ειπωθεί, αντικαθίσταται άμεσα με “άλλη μια χρονιά πιο fabulous”.</p>
-
-<p>Συμμετέχοντας, υπόσχεσαι να διασκεδάσεις, να χορέψεις και να αφήσεις το κινητό μόνο όταν ξεφορτίσει.</p>
-
-<p>Θυμόμαστε ποια έχει γενέθλια!</p>
-<p>Παιδιά… ας το ξεκαθαρίσουμε: είμαστε στο πάρτι της εορτάζουσας, όχι στα δικά μας γενέθλια (εκτός αν φέρεις τούρτα, τότε το ξανασυζητάμε). Κοινώς, απόψε έχει το δικαίωμα της απόλυτης εξουσίας.</p>
-
-
-<h2><p>Κανόνας Συμμετοχής στα Παιχνίδια</p></h2>
-<p>Όλοι παίζουν. Ναι, και εσύ που λες “εγώ δεν είμαι για τέτοια”. Από τη στιγμή που πέρασες την πόρτα, υπογράφεις (νοερά) συμβόλαιο διασκέδασης.Είτε πρόκειται για παντομίμα ή “ποιος ξέρει καλύτερα την εορτάζουσα”,
-ο μόνος σωστός τρόπος να παίξεις είναι με υπερβολικό πάθος και καθόλου ντροπή.</p>
-
-<p>Σας ευχαριστώ όλους από καρδιάς που κάνατε τη μέρα μου τόσο ξεχωριστή! </p>
-<p>Η εορτάζουσα</p>
-    
     <label for="photo-upload" class="upload-btn">Επιλογή φωτογραφιών</label>
     <input type="file" id="photo-upload" accept="image/*" multiple>
+
+    <!-- Εδώ θα εμφανίζονται οι φωτογραφίες -->
+    <div class="preview" id="preview"></div>
   </div>
+
+  <script>
+    const input = document.getElementById('photo-upload');
+    const preview = document.getElementById('preview');
+
+    input.addEventListener('change', () => {
+      preview.innerHTML = ''; // καθαρισμός
+      const files = Array.from(input.files);
+
+      files.forEach(file => {
+        const reader = new FileReader();
+        reader.onload = e => {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          preview.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+  </script>
 </body>
 </html>
